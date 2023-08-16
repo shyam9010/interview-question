@@ -1,0 +1,17 @@
+1. What are the securities in Salesforce
+2. Owd, permission sets, profiles,roles
+3. Data loader , how many days till the files store in recycle bin if we delete records from data loader.
+4. What is the difference between data loader and data import wizard
+5.Difference between delete and hard delete
+6. One scenario of permission set
+7. Order of execution
+8. Reports & dashboard - types,one type report that can't be shown into dashboard.
+9.Triggers context variables
+10. Different between trigger.new and trigger.newmap()
+11.Test classes, best practices, when we use best start test and stop test.
+12.What is @testsetup
+13. Batch classes - diff between synchronous and asynchronous programming in apex
+14. Least, default, maximum batch size
+15.lifecycle of lwc
+16. What is the current release in Salesforce and how many types of releases in Salesforce.
+17. Use of system.assertequals in test classrs
