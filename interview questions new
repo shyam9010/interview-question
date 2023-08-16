@@ -57,3 +57,16 @@
 
 16. What is the current release in Salesforce and how many types of releases in Salesforce.
 17. Use of system.assertequals in test classrs
+18. best practices of apex ?
+ANS.  1. Bulkify Your Code
+      2. Avoid DML/SOQL Queries in Loops
+      3. Avoid Hard-coded IDs
+      4. Explicitly Declare Sharing Model
+      5. Use a Single Trigger per SObject Type
+      6. Use SOQL for Loops
+19. best practices of triggers ?
+ANS . 1) One Trigger Per Object · 
+      2) Logic-less Triggers · 
+      3) Context-Specific Handler Methods · 
+      4) Bulkify your Code · 
+      5) Avoid SOQL Queries or DML ...
