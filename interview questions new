@@ -19,7 +19,7 @@
 6. One scenario of permission set
 7. Order of execution?
   ans. https://i0.wp.com/www.apexhours.com/wp-content/uploads/2019/12/Order-of-Execution1.png?resize=1024%2C580&ssl=1
-
+  
 8. Reports & dashboard - types,one type report that can't be shown into dashboard.
   ans. 4 types : tabular, summary, matrix, and joined reports.  Tabular cannot be shown
 
@@ -62,7 +62,7 @@ ANS.  1. Bulkify Your Code
       2. Avoid DML/SOQL Queries in Loops
       3. Avoid Hard-coded IDs
       4. Explicitly Declare Sharing Model
-      5. Use a Single Trigger per SObject Type
+      5. Use a Single Trigger per SObgject Type
       6. Use SOQL for Loops
 19. best practices of triggers ?
 ANS . 1) One Trigger Per Object · 
