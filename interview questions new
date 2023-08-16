@@ -1,17 +1,59 @@
 1. What are the securities in Salesforce
+  ans . https://www.speridian.com/blogs/what-is-salesforce-security-model/#:~:text=In%20Salesforce%20security%2C%20data%20is,%2C%20field%2C%20and%20individual%20records.
+
 2. Owd, permission sets, profiles,roles
+  ans . https://merfantz.com/blog/profiles-permission-sets-owd-and-sharing-rules/
+
 3. Data loader , how many days till the files store in recycle bin if we delete records from data loader.
+  ans. 15 days
+
 4. What is the difference between data loader and data import wizard
-5.Difference between delete and hard delete
+  ans. For Mass Deleting Records, Use the Data Loader.
+  The Data Import Wizard cannot support the delete operation, so if you must mass-delete files, you must use the Data Loader tool. 
+  The Data Import Wizard only supports importing and exporting data.
+
+5.Difference between delete and hard delete?
+  ans. The difference between a delete and a hard delete is that with a delete, 
+  the deleted records are stored in the Salesforce Recycle Bin. With a hard delete, records become immediately eligible for deletion.
+
 6. One scenario of permission set
-7. Order of execution
+7. Order of execution?
+  ans. https://i0.wp.com/www.apexhours.com/wp-content/uploads/2019/12/Order-of-Execution1.png?resize=1024%2C580&ssl=1
+
 8. Reports & dashboard - types,one type report that can't be shown into dashboard.
-9.Triggers context variables
-10. Different between trigger.new and trigger.newmap()
+  ans. 4 types : tabular, summary, matrix, and joined reports.  Tabular cannot be shown
+
+9.Triggers context variables?
+  ans. isInsert , isUpdate , isDelete , isBefore, isAfter,newMap, new , oldmap
+
+10. Different between trigger.new and trigger.newmap()?
+  ans. Trigger. New return the list of SObject which invoke the trigger. Trigger. newMap return the Map of Id and SObject.26-Dec-2022
+
 11.Test classes, best practices, when we use best start test and stop test.
-12.What is @testsetup
-13. Batch classes - diff between synchronous and asynchronous programming in apex
-14. Least, default, maximum batch size
-15.lifecycle of lwc
+  ans. Test class must start with @isTest annotation.
+       Focus 90+ : code coverage 
+       Governor limits : Using Test.startTest()gives developers a new set of governor limits for the act stage of their test. 
+       Test.stopTest() then allows them to return to their previous governor limits. Test classes must test for Governor Limits using Limits Class
+       Create TestFactory class with @isTest annotation to exclude from organization code size limit.
+       @testSetup to create test records once in a method and use in every test method in the test class.
+
+12.What is @testsetup ?
+  ANS. @testSetup to create test records once in a method and use in every test method in the test class.
+
+13. Batch classes - diff between synchronous and asynchronous programming in apex?
+  ANS. The Batch class is used to process millions of records within normal processing limits. With Batch Apex,
+       we can process records asynchronously to stay within platform limits. If you have a lot of records to process, 
+       for example, data cleansing or archiving, Batch Apex is probably your best solution.
+      Synchronous Apex means entire Apex code is executed in one single go.
+      Asynchronous term means not existing or occurring at the same time. 
+      Asynchronous apex is executed when resources are available. So any calling method which calls Asynchronous apex wont wait for outcome of Asynchronous call.
+
+14. Least, default, maximum batch size ?
+  ANS. The minimum size for Batch Apex is 1. 
+       The maximum size for Batch Apex is 2000. 
+       The default is 200
+
+15.lifecycle of lwc?
+
 16. What is the current release in Salesforce and how many types of releases in Salesforce.
 17. Use of system.assertequals in test classrs
